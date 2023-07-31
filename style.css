@@ -12,6 +12,9 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10rem;
 }
 
@@ -24,22 +27,47 @@ body {
 .stopwatch {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 2rem;
-    width: 100%;
 }
 
 .minutes, .seconds {
     color: rgb(65, 65, 65);
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
-    min-width: 7rem;
+}
+
+.milliseconds {
+    color: rgb(92, 92, 92);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.minutes, .seconds, .milliseconds {
+    text-align: center;
+    min-width: 100px;
 }
 
 .stopwatch p {
     font-size: 30px;
     font-weight: 700;
+}
 
+.start-pause, .reset {
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px;
+    width: 100px;
+}
+
+.start-pause {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.reset {
+    background-color: white;
+    border: .5px solid rgb(138, 137, 137);
 }
